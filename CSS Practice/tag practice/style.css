@@ -1,0 +1,18 @@
+.circle
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    background-color: #00b7ff;
+}
+
+.test
+{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+}

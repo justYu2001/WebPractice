@@ -1,0 +1,36 @@
+.block
+{
+    height: 300px;
+    width: 100%;
+}
+
+.block1
+{
+    background-color: aquamarine;
+}
+
+.block2
+{
+    background-color: blueviolet;
+}
+
+@media screen and (min-width:768px)
+{
+    .block
+    {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    .block1
+    {
+        background-color: brown;
+    }
+    .block2
+    {
+        background-color: cornflowerblue;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>fitter</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="title">資料輸入</div>
+        <div class="col">
+            <p>姓名:<input type="text" class="txt_nameinput"></p>
+            <p>年齡:<input type="text" class="txt_ageinput"></p>
+            <p>喜歡吃的食物:<input type="text" class="txt_favorinput"></p>
+        </div>
+        <div class="col">
+            <p>姓名:<input type="text" class="txt_nameinput"></p>
+            <p>年齡:<input type="text" class="txt_ageinput"></p>
+            <p>喜歡吃的食物:<input type="text" class="txt_favorinput"></p>
+        </div>
+        <div class="col">
+            <p>姓名:<input type="text" class="txt_nameinput"></p>
+            <p>年齡:<input type="text" class="txt_ageinput"></p>
+            <p>喜歡吃的食物:<input type="text" class="txt_favorinput"></p>
+        </div>
+    </div>
+    <div class="query_block" id='query_block'>
+        <div class="title">資料查詢</div>
+        <span>查詢條件:</span>
+        <select name="query_codition" id="cmb_query_codition" class="query_cmb">
+            <option value="init" disabled="disabled" selected="true">請選擇</option>
+            <option value="age">年齡</option>
+            <option value="name">姓名</option>
+            <option value="index">順序</option>
+        </select>
+        <div class="result_bolck" id='rtxt_result'>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

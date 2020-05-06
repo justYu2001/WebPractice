@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    width: 1080px;
+    margin: auto;
+    background-color: cornflowerblue;
+}
+
+.column{
+    width: 320px;
+    padding: 10px;
+    border: rgb(10, 194, 102) solid 5px;
+    margin: 5px;
+    float: left;
+    word-break: break-all;
+}
+
+.clear-fix{
+    clear: both;
+}

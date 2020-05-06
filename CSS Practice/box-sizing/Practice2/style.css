@@ -1,0 +1,23 @@
+*{
+    font-size: 0px;
+}
+
+.wrap
+{
+    width: 960px;
+    margin: auto;
+    background-color: hotpink;
+}
+
+.col
+{
+    background-color: white;
+    word-break: break-all;
+    border: 5px solid grey;
+    padding: 5px;
+    width: 310px;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 24px;
+}

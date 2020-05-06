@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size:72px;
+    color: #19e244;
+}
+
+nav{
+    background-color: black;
+    text-align: center;
+    font-size: 0px;
+}
+
+nav a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 20px;
+    display: inline-block;
+    background-color: black;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+
+.content
+{
+    width: 500px;
+    height: fit-content;
+    border: 5px solid blue;
+    background-color: cornflowerblue;
+    color: rgb(77, 77, 77);
+    padding: 10px;
+    line-height: 1.2;
+    font-size: 18px;
+    text-indent: 36px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    text-align: justify;
+}

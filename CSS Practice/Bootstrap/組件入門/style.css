@@ -1,0 +1,20 @@
+.path
+{
+    background-color: #e9ecef;
+}
+
+.pagenav
+{
+    padding: 60px 0;
+}
+
+.pagination .page-item
+{
+    margin: 10px;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link
+{
+    border-radius: .25rem;
+}

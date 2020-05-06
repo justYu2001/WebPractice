@@ -1,0 +1,15 @@
+.btn {
+  width: 200px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: #aaaaaa;
+  width: 200px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}

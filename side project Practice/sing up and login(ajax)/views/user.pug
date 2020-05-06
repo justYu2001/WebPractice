@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="/css/reset.css")
+        link(rel="stylesheet", href="/css/singin.css")
+    body
+        .warp
+            .title #{title}
+            form(action="")
+                .data_field.name_filed
+                    input(type="text", id="txt_name", required="")
+                    label(for="txt_name") UserName
+                .data_field.password_field
+                    input(type="password", id="txt_password", required="")
+                    label(for="txt_password") Password
+                .warp_footer.clear-fix
+                    .hint
+                        | #{hint}
+                        a(href="/"+hint_link) #{hint_act}
+                        | 吧!
+                    input(type="submit", value=submit_act)
+        script(src=js_url)

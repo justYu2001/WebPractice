@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@types/bluebird": "^3.5.29",
+    "@types/body-parser": "^1.17.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/errorhandler": "^0.0.32",
+    "@types/express": "^4.17.2",
+    "@types/mongoose": "^5.7.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11",
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "server": "node .\\dist\\server.js",
+    "start": "tsc && npm run server"
+  },
+  "name": "sing-up-and-login-ajax",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Yu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.7.0"
+  }
+}

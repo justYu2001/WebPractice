@@ -1,0 +1,261 @@
+body
+{
+    font-family: PingFangTC-Regular;
+    font-weight: bold;
+}
+
+.header
+{
+    background-image: url(https://khh.travel/FileArtPic.ashx?id=43&w=2048&h=960);
+    background-size: cover;
+    background-position: 50% 25%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header .header_title
+{
+    color: white;
+    letter-spacing: 3.89px;
+    font-size: 40px;
+    margin: 130px 0 70px;
+}
+
+.header #cities
+{
+    width: 44%;
+    height: 48px;
+    font-size: 1.5em;
+    border: 1px solid black;
+    color: #5f5f5f;
+    border-radius: 10px;
+    outline: none;
+}
+
+.header .popular_cities
+{
+    width: 78%;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.header .popular_cities .pop_title
+{
+    margin: 20px 0 14px 26px;
+}
+
+.header .popular_cities .content
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 18px;
+}
+
+.header .popular_cities .pop_city
+{
+    text-decoration: none;
+    width: 16%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 11px 0;
+}
+
+.ld
+{
+    background-color: #8a82cc;
+}
+
+.sd
+{
+    background-color: #ffa782;
+}
+
+.xd
+{
+    background-color: #f5d005;
+}
+
+.yd
+{
+    background-color: #559ac8;
+}
+
+.header .header_bottom
+{
+    background-color: white;
+    border-bottom: 5px dotted #559AC8;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+}
+
+.Attractions
+{
+    width: 98%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.Attractions .title
+{
+    text-align: center;
+    padding: 30px 0 24px 0;
+    color: #8A82CC;
+    font-size: 36px;
+}
+
+.Attractions .content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Attractions .content .item
+{
+    width: 48%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    margin-bottom: 20px;
+}
+
+.Attractions .content .item:hover .info
+{
+    bottom: 0;
+}
+
+.Attractions .content .item:hover .nz
+{
+    transform: translateY(-120px);
+}
+
+.Attractions .content .item:hover > img
+{
+    height: 180px;
+}
+
+.Attractions .content .item > img
+{
+    width: auto;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    transition: all .7s;
+}
+
+.Attractions .content .item .info
+{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 120px;
+    bottom: -120px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2);
+    transition: all .7s;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+
+.Attractions .content .item .info img
+{
+    width: 20px;
+    vertical-align: bottom;
+}
+
+.Attractions .content .item .info div
+{
+    margin: 10px 20px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.Attractions .content .item .nz
+{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    transition: all .7s;
+}
+
+.Attractions .content .item .nz .name
+{
+    font-size: 24px;
+    margin: 0 0 10px 10px;
+}
+
+.Attractions .content .item .nz .zone
+{
+    font-size: 16px;
+    margin: 0 10px 10px 0px;
+}
+
+.page_btn
+{
+    display: flex;
+    justify-content: center;
+}
+
+.page_btn a
+{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.page_btn a:hover
+{
+    
+    color: white;
+    background-color: #000000;
+    opacity: .7;
+}
+
+.footer
+{
+    background-color: #559ac8;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer .copyright
+{
+    color: white;
+    padding: 10px 0 0;
+}
+
+.footer .data_src
+{
+    color: #f5d005;
+    padding: 10px 0 15px;
+}
