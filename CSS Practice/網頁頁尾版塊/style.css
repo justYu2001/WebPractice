@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap');
+
+.main_footer {
+  padding-top: 150px;
+  background: linear-gradient(-20deg, #3f5494, #08c7a5);
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.fotter_item {
+  font-family: 'Noto Sans TC', sans-serif;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.fotter_item h4 {
+  font-size: 24px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.fotter_item nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.fotter_item nav a {
+  text-decoration: none;
+  line-height: 1.4em;
+  color: #ffffff;
+  padding: 5px 0;
+}
+
+.fotter_item nav a:hover {
+  color: #ffaa00;
+}
+
+.fotter_subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.fotter_subscribe form {
+  display: flex;
+  margin: auto 0;
+}
+
+.fotter_subscribe input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+}
+
+.fotter_subscribe input[type='text'] {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.fotter_subscribe input[type='submit'] {
+  color: #70f6df;
+  background-color: #3e5293;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin: 150px 0;
+  background-color: #3e5293;
+  color: #70f6df;
+  padding: 10px 0;
+}
