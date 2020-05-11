@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap');
+
+header {
+  background: linear-gradient(20deg, #3d5493, #1aa2a0);
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.main_nav {
+  width: 1200px;
+  display: flex;
+}
+
+.main_nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: auto;
+  padding: 5px 1em;
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative;
+  transition: all ease 0.7s;
+}
+
+.main_nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -10px;
+  border-bottom: 1px solid #ffffff;
+  transition: all ease 0.7s;
+}
+.main_nav a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.main_nav a:hover {
+  transform: translateY(-5px);
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.header_search form {
+  display: flex;
+}
+
+.header_search input,
+.header_search button {
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.header_search input {
+  border-radius: 5em 0 0 5em;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header_search button {
+  border-radius: 0 5em 5em 0;
+}
