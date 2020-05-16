@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+}
+
+.warp {
+  width: 1200px;
+  display: flex;
+  padding-top: 75px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+  margin: 0 15px;
+  border: 10px solid #f9cec2;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 10px 20px 50px #f7b6a7;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+.item .icon:hover svg {
+  animation: shake 0.3s linear 2;
+}
+
+.item .txt {
+  padding: 20px 20px 2em;
+}
+
+.item .icon {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 75px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-top: -75px;
+  color: #f5afac;
+  position: relative;
+}
+
+.item .icon::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-top: 10px solid #f9cec2;
+  border-right: 10px solid #f9cec2;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transform: rotate(-45deg);
+}
+
+.item h3,
+.item p {
+  text-align: center;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.item h3 {
+  color: #f5afac;
+  margin-bottom: 0.4em;
+}
+
+.item p {
+  color: #cccccc;
+}
