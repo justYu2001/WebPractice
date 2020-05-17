@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #3d5b94, #08c7a5);
+}
+
+.table {
+  width: 800px;
+}
+
+table {
+  width: 100%;
+  /* border: 3px double #666666; */
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.table th,
+.table td {
+  padding: 6px 10px;
+  border: 3px double #666666;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.table thead {
+  font-weight: 500;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #ffffaa;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+.table thead th:first-child {
+  border-radius: 7px 0 0 0;
+}
+
+.table thead th:last-child {
+  border-radius: 0 7px 0 0;
+}
+
+.table tfoot tr:first-child {
+  border-radius: 0 0 0 7px;
+}
+
+.table tfoot tr:last-child {
+  border-radius: 0 0 7px 0;
+}
+
+.table caption {
+  caption-side: bottom;
+  padding: 10px 10px;
+  text-align: right;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #ffffff;
+}
