@@ -1,0 +1,74 @@
+body {
+  background-color: #546377;
+  height: 100vh;
+}
+
+.side_menu {
+  padding-top: 50px;
+  box-sizing: border-box;
+  width: 300px;
+  background: linear-gradient(0deg, #3381b0, #c2196c);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 0 10px hsla(240, 40%, 30%, 0.4);
+}
+
+form {
+  display: flex;
+  margin: 0 10px 50px;
+  border: 1px solid #ffffff;
+  border-radius: 5em;
+}
+
+form input,
+form button {
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+form input {
+  width: 230px;
+}
+
+form button {
+  width: 50px;
+}
+
+.side_menu nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  font-size: 1em;
+}
+
+.side_menu nav a .icon {
+  width: 24px;
+  display: inline-flex;
+  justify-content: center;
+  margin-right: -24px;
+  vertical-align: bottom;
+  transform: scale(0);
+  transition: all ease 0.5s;
+}
+
+.side_menu nav a:hover .icon {
+  margin-right: 0px;
+  transform: scale(1);
+}
+
+.side_menu nav a + a::after {
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  border-bottom: 1px solid #ffffff;
+}
