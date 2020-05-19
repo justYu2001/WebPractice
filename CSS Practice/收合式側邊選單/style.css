@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  height: 100vh;
+  background-color: #546377;
+}
+
+.side_menu {
+  width: 300px;
+  background: linear-gradient(0deg, #3381b0, #c2196c);
+  height: 100%;
+  padding-top: 50px;
+  position: relative;
+  transition: all ease 0.7s;
+}
+
+.side_menu form {
+  display: flex;
+  border: 1px solid #ffffff;
+  border-radius: 5em;
+  margin: 0 10px 50px;
+}
+
+.side_menu form input,
+.side_menu form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.side_menu form input {
+  font-family: 'Noto Sans TC', sans-serif;
+  width: 230px;
+}
+
+.side_menu form button {
+  width: 50px;
+}
+
+.side_menu nav a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 20px 24px;
+  font-size: 24px;
+  position: relative;
+}
+
+.side_menu nav a + a::before {
+  content: '';
+  border-top: 1px solid #ffffff;
+  left: 20px;
+  right: 20px;
+  top: 0;
+  position: absolute;
+}
+
+.side_menu nav a span {
+  vertical-align: bottom;
+  width: 36px;
+  text-align: center;
+  display: inline-block;
+  margin-right: -36px;
+  transform: scale(0);
+  transition: all ease 0.7s;
+}
+
+.side_menu nav a:hover span {
+  margin-right: 0;
+  transform: scale(1);
+}
+
+.side_menu_switch {
+  height: 80px;
+  width: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 300px;
+}
+
+.side_menu_switch svg {
+  margin-right: 5px;
+  transition: all ease 0.7s;
+}
+
+#sideMenuSwitchcheckbox {
+  display: none;
+}
+
+#sideMenuSwitchcheckbox:checked + .side_menu {
+  transform: translateX(-300px);
+}
+
+#sideMenuSwitchcheckbox:checked + .side_menu .side_menu_switch svg {
+  transform: scaleX(-1);
+}
