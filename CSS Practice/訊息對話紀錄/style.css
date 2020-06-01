@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3effb;
+}
+
+.dialogue {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px #3e92cc;
+  background-color: #f4f5f7;
+}
+.user {
+  display: flex;
+  align-items: flex-start;
+}
+
+.avatar {
+  text-align: center;
+}
+
+.avatar .pic {
+  width: 60px;
+  margin-bottom: 5px;
+}
+
+.avatar .pic img {
+  width: 100%;
+  vertical-align: bottom;
+  border-radius: 50%;
+  /* margin-bottom: 10px; */
+}
+
+.avatar .name {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.user .txt {
+  background-color: #aaaaaa;
+  padding: 16px;
+  border-radius: 10px;
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative;
+}
+
+.user .txt::before {
+  content: '';
+  position: absolute;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  top: 10px;
+}
+
+.user.local {
+  justify-content: flex-end;
+}
+
+.user.remote .txt {
+  margin-left: 10px;
+  margin-right: 70px;
+  background-color: #ffffff;
+  color: #a1b4c5;
+}
+
+.user.remote .txt::before {
+  border-right: 10px solid #ffffff;
+  left: -10px;
+}
+
+.user.local .txt {
+  margin-right: 10px;
+  margin-left: 70x;
+  order: -1;
+  color: white;
+  background-color: #3e92cc;
+}
+
+.user.local .txt::before {
+  border-left: 10px solid #3e92cc;
+  right: -10px;
+}
