@@ -1,0 +1,42 @@
+html {
+  font-size: 16px;
+}
+
+.wrap {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.title {
+  padding: 15px 0;
+}
+
+h3 {
+  height: 100%;
+  font-size: 1.725rem;
+  text-align: right;
+  padding: 15px;
+  width: 400px;
+  background-color: #d5c7b9;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+h3::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 4em;
+  background-color: black;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+.txt {
+  width: 800px;
+  padding: 15px;
+  column-count: 2;
+  column-gap: 30px;
+  box-sizing: border-box;
+}
