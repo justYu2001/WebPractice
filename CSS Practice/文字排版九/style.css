@@ -1,0 +1,45 @@
+.wrap {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: 0 0 30px #cccccc;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  z-index: -1;
+  width: fit-content;
+  margin: auto;
+  left: 30px;
+  top: -70px;
+}
+
+.title h1 {
+  font-size: 180px;
+  color: #dddddd;
+}
+
+.txt {
+  width: 600px;
+  padding: 15px;
+  box-sizing: border-box;
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.txt p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.txt p:first-child::first-letter {
+  font-size: 40px;
+  padding-right: 10px;
+  float: left;
+  margin-bottom: -20px;
+  font-weight: bold;
+}
