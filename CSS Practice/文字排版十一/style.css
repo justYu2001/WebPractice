@@ -1,0 +1,76 @@
+.wrap {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.title {
+    font-size: 90px;
+    text-align: center;
+    /* display: flex; */
+    /* border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 15px 0;*/
+    margin-bottom: 20px;
+}
+
+/* .title::after {
+    content: '';
+    display: block;
+    width: 4em;
+    height: 3px;
+    background-color: #cccccc;
+    margin: 20px auto;
+} */
+
+/* .title::before,
+.title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #aaaaaa;
+    margin: auto;
+    flex-grow: 1;
+} */
+
+/* .title::before {
+    margin-right: 0.3em;
+}
+
+.title::after {
+    margin-left: 0.3em;
+} */
+
+.txt {
+    position: relative;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.txt p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.txt::before,
+.txt::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.txt::before {
+    border-top: 3px solid #aaaaaa;
+    border-left: 3px solid #aaaaaa;
+    left: 0;
+    top: 0;
+}
+
+.txt::after {
+    right: 0;
+    bottom: 0;
+    border-bottom: 3px solid #aaaaaa;
+    border-right: 3px solid #aaaaaa;
+}

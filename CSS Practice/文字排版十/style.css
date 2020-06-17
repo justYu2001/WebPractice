@@ -1,0 +1,43 @@
+.wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 30px #eeeeee;
+    margin-top: 40px;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    z-index: -1;
+    left: 30px;
+}
+
+.title h1 {
+    font-size: 180px;
+    color: #ffffff;
+    text-shadow: 20px 20px 0 #eeeeee;
+    font-weight: bold;
+}
+
+.txt {
+    width: 600px;
+    box-sizing: border-box;
+    padding: 15px;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.txt p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.txt p:first-child::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    margin-bottom: -20px;
+    padding-right: 10px;
+}
