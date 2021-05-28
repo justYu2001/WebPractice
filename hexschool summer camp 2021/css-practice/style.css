@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+}
+
+p {
+    text-indent: 32px;
+}
+
+p a {
+    color: red;
+}
+
+h2 {
+    border-left: 5px solid #ff0000;
+    border-bottom: 10px solid #ff0000;
+}
+
+.wrong {
+    text-decoration: line-through;
+}
+
+ul li:nth-child(5) {
+    text-decoration: line-through;
+}
+
+img {
+    border: 10px solid gray;
+}
