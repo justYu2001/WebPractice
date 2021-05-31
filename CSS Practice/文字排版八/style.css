@@ -1,0 +1,40 @@
+.wrap {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+h1 {
+  width: 400px;
+  flex-shrink: 0;
+  font-size: 56px;
+  color: #aaaaaa;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-400px);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.txt {
+  width: 800px;
+  flex-shrink: 0;
+  column-count: 2;
+  column-gap: 30px;
+  box-shadow: 0 0 30px #cccccc;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.txt p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.txt p:first-child::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  float: left;
+  padding-right: 10px;
+  margin-bottom: -20px;
+}
