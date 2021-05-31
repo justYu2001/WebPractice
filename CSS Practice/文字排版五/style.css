@@ -1,0 +1,47 @@
+html {
+  font-size: 16px;
+}
+
+.wrap {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 90px;
+  width: 400px;
+  font-weight: bold;
+  float: right;
+  color: #aaaaaa;
+  padding: 15px;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  border: 30px solid #eeeeee;
+  bottom: 0;
+  z-index: -1;
+}
+
+.txt {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.txt p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.txt p:first-child::first-letter {
+  font-size: 2.625rem;
+  font-weight: bold;
+  float: left;
+  margin-bottom: -15px;
+  padding-right: 10px;
+}
