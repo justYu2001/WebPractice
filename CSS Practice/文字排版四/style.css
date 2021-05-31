@@ -1,0 +1,43 @@
+html {
+  font-size: 16px;
+}
+
+.wrap {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  background-color: #eeeeee;
+  font-size: 3.375rem;
+  font-weight: bold;
+  width: 400px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.txt p {
+  line-height: 1.5;
+}
+
+.txt {
+  column-count: 2;
+  column-gap: 460px;
+}
+
+.txt p:first-child::first-letter {
+  font-size: 2.265rem;
+  float: left;
+  font-weight: bold;
+  padding-right: 10px;
+  margin-bottom: -20px;
+}
