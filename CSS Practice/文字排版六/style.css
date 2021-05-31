@@ -1,0 +1,40 @@
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: bold;
+  width: 400px;
+  color: #aaaaaa;
+  float: right;
+  padding: 15px;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  border: 30px solid #f1c555;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(20deg);
+}
+
+.wrap {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.txt {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.txt p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
