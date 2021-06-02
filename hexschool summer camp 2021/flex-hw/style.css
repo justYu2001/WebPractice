@@ -1,0 +1,42 @@
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+.course {
+    width: 1024px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-item {
+    width: 298px;
+    border: 1px solid black;
+}
+
+.course-item h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.course-item p {
+    text-align: justify;
+}
+
+.course-item img {
+    width: 100%;
+}
