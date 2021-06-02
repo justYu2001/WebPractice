@@ -1,0 +1,24 @@
+.menu {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.menu li {
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.menu li a {
+    background-color: #00ffa2;
+    display: block;
+    padding: 10px 0;
+    color: #004466;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #004466;
+    color: #00ffa2;
+}
