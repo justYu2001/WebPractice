@@ -16,11 +16,8 @@
 }
 
 .picture {
+    display: block;
     margin: 48px 0;
-}
-
-img {
-    vertical-align: middle;
 }
 
 h2 {
