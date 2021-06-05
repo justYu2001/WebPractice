@@ -8,8 +8,6 @@
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
     background-color: #ffffff;
     width: 375px;
 }
