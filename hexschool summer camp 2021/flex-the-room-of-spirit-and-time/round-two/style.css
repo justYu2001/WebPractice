@@ -1,0 +1,33 @@
+.wrap {
+    display: flex;
+    width: 1125px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.container {
+    width: 555px;
+    padding: 210px 0;
+    background-color: #eaf0ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 264px;
+}
+
+.container h2,
+.container p {
+    margin-bottom: 40px;
+}
+
+.container h2 {
+    color: #3f5d45;
+    font-size: 24px;
+}
+
+.content {
+    width: 475px;
+}
