@@ -1,0 +1,58 @@
+.wrap {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.summury h2,
+.list h2 {
+    font-size: 24px;
+    padding: 26px 0;
+    text-align: center;
+    background-color: #eaf0ed;
+    color: #3f5d45;
+}
+
+.summury ul,
+.list ul {
+    border: 1px solid #eaf0ed;
+}
+
+.summury ul {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+.summury li {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    color: #3f5d45;
+}
+
+.total {
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.list li {
+    color: #3f5d45;
+    display: flex;
+    margin: 16px 0;
+}
+
+.list li h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.list img {
+    margin: 0 16px;
+}
+
+.list ul {
+    padding: 0 12px;
+}
+
+.list .price {
+    font-size: 20px;
+}
