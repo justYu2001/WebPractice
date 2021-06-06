@@ -1,0 +1,33 @@
+.wrap {
+    width: 1145px;
+    background-color: #eaf0ed;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 300px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #3f5d45;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    padding: 0 20px;
+    color: #3f5d45;
+}
