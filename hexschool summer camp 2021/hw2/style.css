@@ -65,7 +65,6 @@ body {
 
 .list .item,
 .list .title {
-    box-sizing: border-box;
     text-align: center;
     width: 300px;
     line-height: 40px;
@@ -138,7 +137,6 @@ body {
 }
 
 .menu .title {
-    height: 56px;
     display: flex;
     border: 1px solid #eaf0ed;
 }
