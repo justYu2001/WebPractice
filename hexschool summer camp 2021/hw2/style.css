@@ -68,25 +68,26 @@ body {
     box-sizing: border-box;
     text-align: center;
     width: 300px;
-    height: 65px;
     line-height: 40px;
-    padding: 7.5px 0;
     font-size: 24px;
     font-weight: 600;
 }
 
 .list .item {
     background-color: white;
+    padding: 11.5px 0;
 }
 
 .list .title {
     background-color: #3f5d45;
     color: #eaf0ed;
+    padding: 12.5px 0;
 }
 
 .list .all {
     background-color: #eaf0ed;
     color: #3f5d45;
+    padding: 12.5px 0;
 }
 
 .list a {
