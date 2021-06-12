@@ -156,6 +156,7 @@
 .btn {
     display: block;
     text-align: center;
+    text-decoration: none;
     height: 65px;
     line-height: 65px;
     background-color: #eaf0ed;
@@ -184,14 +185,22 @@
     font-family: 'PingFang TC';
 }
 
+.page-nav a {
+    display: block;
+    text-decoration: none;
+    color: #3f5d45;
+}
+
 .page-nav .btn {
     background-color: white;
-    color: #3f5d45;
     border: 1px solid #eaf0ed;
 }
 
 .page-nav .active {
     background-color: #3f5d45;
-    color: #eaf0ed;
     border: none;
+}
+
+.page-nav .active a {
+    color: #eaf0ed;
 }
