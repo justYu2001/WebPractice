@@ -28,6 +28,7 @@ body {
     display: block;
     color: #3f5d45;
     text-decoration: none;
+    line-height: 73px;
 }
 
 .logo {
@@ -61,7 +62,8 @@ body {
     text-align: center;
     width: 300px;
     height: 65px;
-    line-height: 65px;
+    line-height: 40px;
+    padding: 7.5px 0;
     font-size: 24px;
     font-weight: 600;
 }
@@ -145,20 +147,24 @@ body {
 .menu .name {
     width: 173px;
     font-weight: 300;
+    line-height: 20px;
+    padding: 17px 0;
 }
 
 .menu .price {
     width: 125px;
     border: 1px solid #eaf0ed;
     font-weight: 600;
+    line-height: 24px;
+    padding: 15px 0;
 }
 
-.btn {
+.menu .btn {
     display: block;
     text-align: center;
     text-decoration: none;
-    height: 65px;
-    line-height: 65px;
+    line-height: 20px;
+    padding: 22.5px 0;
     background-color: #eaf0ed;
     color: #3f5d45;
     font-size: 24px;
@@ -177,7 +183,6 @@ body {
 
 .page-nav li {
     width: 60px;
-    height: 60px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 600;
@@ -187,6 +192,9 @@ body {
     display: block;
     text-decoration: none;
     color: #3f5d45;
+    line-height: 20px;
+    padding: 19px 0;
+    text-align: center;
 }
 
 .page-nav .btn {
