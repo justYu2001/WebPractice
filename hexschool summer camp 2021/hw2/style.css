@@ -8,20 +8,18 @@ body {
 }
 
 .header {
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 .header ul {
-    width: 284px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.header .shopping-cart {
-    margin-left: 20px;
+.header .shopping-cart a {
+    padding-left: 50px;
+    padding-right: 0;
 }
 
 .header a {
@@ -29,6 +27,15 @@ body {
     color: #3f5d45;
     text-decoration: none;
     line-height: 73px;
+    padding: 0 30px;
+}
+.logo {
+    margin-top: 16px;
+}
+
+.shopping-cart img {
+    vertical-align: top;
+    margin-top: 24px;
 }
 
 .logo {
