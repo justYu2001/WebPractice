@@ -9,29 +9,34 @@
     justify-content: space-between;
 }
 
-.header div {
-    width: 319px;
+.header ul {
+    width: 284px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header .shopping-cart {
+    margin-left: 20px;
+}
+
+.header a {
+    color: #3f5d45;
+    text-decoration: none;
 }
 
 .logo {
     width: 219.49px;
 }
 
-.header ul {
-    width: 216px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header li {
-    color: #3f5d45;
     font-weight: 600;
     font-family: 'PingFang TC';
     text-align: center;
+}
+
+.header li:hover a {
+    text-decoration: underline;
 }
 
 .banner {
