@@ -221,3 +221,9 @@ body {
 .page-nav .active a {
     color: #eaf0ed;
 }
+
+.page-nav .previous a,
+.page-nav .next a {
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
