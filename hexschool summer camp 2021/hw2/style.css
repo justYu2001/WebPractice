@@ -73,8 +73,8 @@ body {
 }
 
 .list .item {
+    width: 298px;
     background-color: white;
-    padding: 11.5px 0;
 }
 
 .list .title {
@@ -84,15 +84,20 @@ body {
 }
 
 .list .all {
+    width: 300px;
     background-color: #eaf0ed;
     color: #3f5d45;
-    padding: 12.5px 0;
 }
 
 .list a {
+    padding: 11.5px 0;
     display: block;
     color: #3f5d45;
     text-decoration: none;
+}
+
+.list .all a {
+    padding: 12.5px 0;
 }
 
 .list a:hover {
