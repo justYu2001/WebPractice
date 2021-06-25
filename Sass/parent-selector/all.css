@@ -1,0 +1,12 @@
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #ccc;
+}
+
+.item-third a {
+  color: pink;
+}
+/*# sourceMappingURL=all.css.map */

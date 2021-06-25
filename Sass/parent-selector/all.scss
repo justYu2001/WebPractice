@@ -1,0 +1,16 @@
+.menu {
+    a {
+        text-decoration: none;
+        &:hover {
+            color: #ccc;
+        }
+    }
+}
+
+.item {
+    &-third {
+        a {
+            color: pink;
+        }
+    }
+}
