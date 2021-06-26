@@ -1,0 +1,14 @@
+$link-color: green;
+
+.header {
+    a {
+        $link-color: rgba(0, 0, 255, 0.534);
+        color: $link-color;
+    }
+}
+
+.footer {
+    a {
+        color: $link-color;
+    }
+}
