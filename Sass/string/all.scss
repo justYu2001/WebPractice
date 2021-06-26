@@ -1,0 +1,14 @@
+$font-family-base: 'Arial, Helvetica, sans-serif';
+$font-family-title: "'Times New Roman', Times, serif";
+$font-m: 16px;
+$font-l: $font-m * 2;
+
+h1 {
+    font-family: $font-family-title;
+    font-size: $font-l;
+}
+
+p {
+    font-family: $font-family-base;
+    font-size: $font-m;
+}
