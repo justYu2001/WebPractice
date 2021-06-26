@@ -1,0 +1,10 @@
+$font-m: 16px;
+$font-l: $font-m * 1.5;
+
+h1 {
+    font-size: $font-l;
+}
+
+p {
+    font-size: $font-m;
+}
