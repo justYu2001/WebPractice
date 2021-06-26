@@ -1,0 +1,25 @@
+$title-color: #0044ff;
+$link-color: green;
+$font-l: 36px;
+
+.header {
+    h1 {
+        color: $title-color;
+        font-size: $font-l;
+    }
+    a {
+        color: $link-color;
+    }
+}
+
+.content {
+    a {
+        color: $link-color;
+    }
+}
+
+.footer {
+    a {
+        color: $link-color;
+    }
+}
