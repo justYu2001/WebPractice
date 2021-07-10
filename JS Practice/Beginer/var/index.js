@@ -30,6 +30,3 @@ function f(){
 }
 
 f();
-
-let e = 1;
-console.log(global.e);
