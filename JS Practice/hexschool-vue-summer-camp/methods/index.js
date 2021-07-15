@@ -4,7 +4,6 @@ const app = Vue.createApp({
             price: 100,
             quantity: 10,
             twd: 1,
-            count: 0,
         }
     },
     methods: {
@@ -22,7 +21,6 @@ const app = Vue.createApp({
             },
             set (val) {
                 this.twd = parseFloat(Number(val) * 0.278).toFixed(3);
-                this.count++;
             }
         },
         usd:{
