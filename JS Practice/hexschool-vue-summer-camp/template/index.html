@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div v-text="text"></div>
+        <div v-html="html"></div>
+        <div v-once>{{ text }}</div>
+        <input type="text" v-model="text">
+        <div v-pre>{{ text }}</div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+</html>
