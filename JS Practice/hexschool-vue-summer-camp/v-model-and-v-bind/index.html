@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <p :id="customId">hi</p>
+        <button @click="toggleDisable()">{{ btnText }}</button>
+        <button :disabled="isBtnDisable">按鈕</button>
+        <div>
+            <p>message: {{ message }}</p>
+            <input type="text" v-model="message">
+            <div><textarea v-model="message" cols="30" rows="10"></textarea></div>
+        </div>
+        <div>
+            <ul>
+                <li><label for="One">One:</label><input type="radio" id="One" value="1" v-model="pick"></li>
+                <li><label for="Two">Two:</label><input type="radio" id="Two" value="2" v-model="pick"></li>
+            </ul>
+            <p>pick:{{ pick }}</p>
+        </div>
+        <div>
+            <input type="checkbox" id="jack" value="jack" v-model="people">
+            <label for="jack">jack</label>
+            <input type="checkbox" id="yu" value="yu" v-model="people">
+            <label for="yu">yu</label>
+            <input type="checkbox" id="Mirror" value="Mirror" v-model="people">
+            <label for="Mirror">Mirror</label>
+            <input type="checkbox" id="panda" value="panda" v-model="people">
+            <label for="panda">panda</label>
+            <p>people:{{ people }}</p>
+        </div>
+        <div>
+            <label for="status">status:</label>
+            <input type="checkbox" id="status" v-model="status">
+            <p>{{ status }}</p>
+        </div>
+        <div>
+            <select v-model="city">
+                <option value="" disabled>請選擇</option>
+                <option value="台北">台北</option>
+                <option value="新北">新北</option>
+                <option value="台中">台中</option>
+            </select>
+            <p>城市:{{ city }}</p>
+        </div>
+        <div>
+            <input type="text" v-model.lazy="lazyMessage">
+            <p>Message with ".lazy":{{ lazyMessage }}</p>
+        </div>
+        <div>
+            <input v-model.number="num1"> + <input v-model.number="num2"> = {{ sum }}
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+</html>
