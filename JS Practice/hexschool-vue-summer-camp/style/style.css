@@ -1,0 +1,9 @@
+input {
+    width: 500px;
+}
+
+.error {
+    border-color: red;
+    color: red;
+    outline: none;
+}
