@@ -1,0 +1,8 @@
+.v-show {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+}
