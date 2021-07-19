@@ -1,0 +1,184 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+.header {
+    width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header .square-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.square-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.square-btn:hover {
+    background-color: #0063cc;
+}
+
+.user-list {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-list .user {
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.user:hover .card-body .square-btn {
+    display: block;
+}
+
+.user .card-head {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.user .card-head .user-img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.user .card-head .card-title {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.user .card-head .card-title small {
+    display: block;
+    color: #979aa1;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+.user .card-head button {
+    background-color: transparent;
+    border: none;
+    width: 18px;
+    height: 18px;
+    margin: 0 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+
+.user .card-head button:focus {
+    outline: none;
+}
+
+.user .card-head .follow-btn {
+    background-image: url('heart.svg');
+}
+
+.user .card-head .follow-btn:hover,
+.user .card-head .unfollow-btn {
+    background-image: url('heart-fill.svg');
+}
+
+.user .card-body {
+    padding: 10px 0;
+    position: relative;
+}
+
+.user .card-body i {
+    font-size: 24px;
+}
+
+.user .card-body .bi-gender-male {
+    color: #6cf;
+}
+
+.user .card-body .bi-gender-female {
+    color: #ff69b4;
+}
+
+.user .card-body .info {
+    margin: 10px 0;
+}
+
+.user .card-body .info h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.user .card-body .info a:hover {
+    color: #007bff;
+}
+
+.user .card-body .square-btn {
+    display: none;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 19px;
+    right: 0;
+}
+
+.detail {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.detail-container {
+    background-color: #4d4d4d;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-body {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+}
+
+.detail-body iframe {
+    border: none;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.detail-body .user {
+    padding: 20px;
+    width: 50%;
+}
+
+.active {
+    display: block;
+}
