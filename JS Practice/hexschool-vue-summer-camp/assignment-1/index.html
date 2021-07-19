@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>六角Vue夏令營第一週作業</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="app">
+        <div :class="detailStyle" v-if="isShow">
+            <div class="detail-container" @click.self="isShow = false">
+                <div class="detail-body">
+                    <div class="user">
+                        <div class="card-head">
+                            <img :src="currentUser.picture.large" alt="" class="user-img" v-if="status">
+                            <img :src="currentUser.picture.thumbnail" alt="" class="user-img" v-else>
+                            <h5 class="card-title">
+                                {{ currentUser.name.first }} {{ currentUser.name.last }}
+                                <small class="user-id">{{ currentUser.login.username }}</small>
+                            </h5>
+                            <button :class="followBtnStyle(currentUser)" @click="toggleFollowed(currentUser)"></button>
+                        </div>
+                        <ul class="card-body">
+                            <li class="info">
+                                <i class="bi bi-gender-male" v-if="currentUser.gender === 'male'"></i>
+                                <i class="bi bi-gender-female" v-else></i>
+                            </li>
+                            <li class="info">
+                                <h6>Birthday</h6>
+                                {{ currentUser.birthday.month }}/{{ currentUser.birthday.date }}/{{ currentUser.birthday.year }}
+                            </li>
+                            <li class="info">
+                                <h6>Phone</h6>
+                                <a :href="`tel:+${currentUser.phone}`">{{ currentUser.phone }}</a>
+                            </li>
+                            <li class="info">
+                                <h6>Cell</h6>
+                                <a :href="`tel:+${currentUser.cell}`">{{ currentUser.cell }}</a>
+                            </li>
+                            <li class="info">
+                                <h6>Email</h6>
+                                <a :href="`mailto:${currentUser.email}`">{{ currentUser.email }}</a>
+                            </li>
+                            <li class="info">
+                                <h6>Address</h6>
+                                No.{{ currentUser.location.street.number }}, {{ currentUser.location.street.name }}, {{ currentUser.location.city }}, {{ currentUser.location.state }} {{ currentUser.location.postcode }}, {{ currentUser.location.country }}
+                            </li>
+                        </ul>
+                    </div>
+                    <iframe :src=`https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=${currentUser.location.coordinates.latitude},${currentUser.location.coordinates.longitude}&z=10&output=embed` allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <button class="square-btn" @click="status = !status">切換大頭貼解析度</button>
+            現在圖片解析度：
+            <span v-if="status">清晰</span>
+            <span v-else>模糊</span>
+        </div>
+        <ul class="user-list">
+            <li class="user" v-for="user in users">
+                <div class="card-head">
+                    <img :src="user.picture.large" alt="" class="user-img" v-if="status">
+                    <img :src="user.picture.thumbnail" alt="" class="user-img" v-else>
+                    <h5 class="card-title">
+                        {{ user.name.first }} {{ user.name.last }}
+                        <small class="user-id">{{ user.login.username }}</small>
+                    </h5>
+                    <button :class="followBtnStyle(user)" @click="toggleFollowed(user)"></button>
+                </div>
+                <ul class="card-body">
+                    <li class="info">
+                        <i class="bi bi-gender-male" v-if="user.gender === 'male'"></i>
+                        <i class="bi bi-gender-female" v-else></i>
+                    </li>
+                    <li class="info">
+                        <h6>Birthday</h6>
+                        {{ user.birthday.month }}/{{ user.birthday.date }}/{{ user.birthday.year }}
+                    </li>
+                    <li class="info">
+                        <h6>Phone</h6>
+                        <a :href="`tel:+${user.phone}`">{{ user.phone }}</a>
+                    </li>
+                    <li class="info">
+                        <h6>Cell</h6>
+                        <a :href="`tel:+${user.cell}`">{{ user.cell }}</a>
+                    </li>
+                    <li class="info">
+                        <h6>Email</h6>
+                        <a :href="`mailto:${user.email}`">{{ user.email }}</a>
+                    </li>
+                    <button class="square-btn" @click="showUserDetail(user)">More</button>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
