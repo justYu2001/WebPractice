@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 在此使用 {{}} 綁定 text1 -->
+       <div>{{ text1 }}</div>
+       
+       <!-- 在此使用 v-text 綁定 text2 -->
+       <div v-text="text2"></div>
+       
+       <!-- 在此使用 v-model 綁定 text3 -->
+       <input type="text" v-model="text3">
+     </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+</html>
