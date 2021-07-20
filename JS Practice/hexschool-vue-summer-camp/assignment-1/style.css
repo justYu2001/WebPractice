@@ -142,7 +142,6 @@ body {
 }
 
 .detail {
-    display: none;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -177,8 +176,4 @@ body {
 .detail-body .user {
     padding: 20px;
     width: 50%;
-}
-
-.active {
-    display: block;
 }
