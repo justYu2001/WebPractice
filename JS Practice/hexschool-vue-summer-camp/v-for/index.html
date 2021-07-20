@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="(item, index) in arr">{{ index }}:{{ item }}</li>
+        </ol>
+        <ul>
+            <li v-for="(information, key, index) in person">{{ key }}:{{ information }} index:{{ index }}</li>
+        </ul>
+    <ul class="pagination">
+            <li class="page-item"><a href="">&lt;</a></li>
+            <li class="page-item" v-for="page in 10"><a href="">{{ page }}</a></li>
+            <li class="page-item"><a href="">&gt;</a></li>
+        </ul>
+        <ul>
+            <li v-for="number in evenNumbers">{{ number }}</li>
+        </ul>
+        <div>
+            sort:
+            <ul>
+                <li v-for="number in sortedNumbers">{{ number }}</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Todo</h1>
+            <ul>
+                <li v-for="thing in todoLists">
+                    <label><input type="checkbox" v-model="thing.isDone" :key="thing.id">{{ thing.title }}</label>
+                </li>
+            </ul><h1>Done</h1>
+            <ul>
+                <li v-for="thing in doneLists">
+                    <label><input type="checkbox" v-model="thing.isDone" :key="thing.id">{{ thing.title }}</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+</html>
