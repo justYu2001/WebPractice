@@ -1,86 +1,82 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    background-color: #E5F9E0;
+    background-color: #e5f9e0;
     font-family: Microsoft JhengHei;
     font-weight: bolder;
 }
 
-.container{
-    background-color: #E5F9E0;
+.container {
+    background-color: #e5f9e0;
     width: 320px;
     margin: auto;
     text-align: center;
 }
 
-h2{
+h2 {
     background-color: inherit;
 }
 
-.id{
+.id {
     background-color: inherit;
     font-size: 20px;
 }
 
-.col{
-    color:#003F91;
+.col {
+    color: #003f91;
     margin: 2.5px;
     width: 150px;
     padding: 2.5px;
     float: left;
     word-break: break-all;
-    background-color: #B2F7EF;
+    background-color: #b2f7ef;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
-@media screen and (min-width:960px)
-{
-    .container{
-        background-color: #E5F9E0;
+@media screen and (min-width: 960px) {
+    .container {
+        background-color: #e5f9e0;
         width: 960px;
         margin: auto;
         text-align: center;
     }
-    .col{
-        color:#003F91;
+    .col {
+        color: #003f91;
         margin: 5px;
         width: 300px;
         padding: 5px;
         float: left;
         word-break: break-all;
-        background-color: #B2F7EF;
+        background-color: #b2f7ef;
         box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     }
-    .id{
+    .id {
         background-color: inherit;
         font-size: 30px;
     }
 }
 
-.col-img{
+.col-img {
     width: 100%;
     background-color: inherit;
 }
 
-.icon-img{
+.icon-img {
     width: 100px;
     height: 100px;
     border-radius: 30%;
     margin-top: 10px;
 }
 
-.clear-fix
-{
+.clear-fix {
     clear: both;
 }
 
-figcaption
-{
+figcaption {
     display: none;
 }
 
-.number
-{
-    width:100%;
+.number {
+    width: 100%;
     font-size: 154px;
     background-color: inherit;
 }

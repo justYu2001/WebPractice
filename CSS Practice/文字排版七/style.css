@@ -1,61 +1,61 @@
 .wrap {
-  width: 1200px;
-  margin: auto;
-  display: flex;
-  margin-top: 40px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
 }
 
 .title {
-  width: 400px;
-  flex-shrink: 0;
-  order: 1;
-  font-size: 90px;
-  box-sizing: border-box;
-  padding-left: 15px;
-  color: #aaaaaa;
-  position: relative;
+    width: 400px;
+    flex-shrink: 0;
+    order: 1;
+    font-size: 90px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    color: #aaaaaa;
+    position: relative;
 }
 
 .title::before,
 .title::after {
-  content: '';
-  position: absolute;
-  width: 180px;
-  height: 180px;
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
 
-  top: 0;
-  z-index: -1;
+    top: 0;
+    z-index: -1;
 }
 
 .title::before {
-  transform: rotate(10deg);
-  border: 20px solid #f1b444;
+    transform: rotate(10deg);
+    border: 20px solid #f1b444;
 }
 
 .title::after {
-  transform: rotate(17deg);
-  border: 20px solid #f1c555;
+    transform: rotate(17deg);
+    border: 20px solid #f1c555;
 }
 
 .txt {
-  width: 800px;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  padding: 15px;
-  column-count: 2;
-  column-gap: 30px;
-  box-shadow: 0 0 30px #cccccc;
+    width: 800px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    column-count: 2;
+    column-gap: 30px;
+    box-shadow: 0 0 30px #cccccc;
 }
 
 .txt p {
-  line-height: 1.5;
-  margin-bottom: 1em;
+    line-height: 1.5;
+    margin-bottom: 1em;
 }
 
 .txt p:first-child::first-letter {
-  font-size: 40px;
-  float: left;
-  padding-right: 10px;
-  margin-bottom: -20px;
-  font-weight: bold;
+    font-size: 40px;
+    float: left;
+    padding-right: 10px;
+    margin-bottom: -20px;
+    font-weight: bold;
 }

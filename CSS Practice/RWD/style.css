@@ -1,30 +1,24 @@
-.wrap
-{
+.wrap {
     width: 100%;
     max-width: 1400px;
 }
 
-.title
-{
+.title {
     font-size: 36px;
 }
 
-.item
-{
+.item {
     background-color: beige;
     margin: 20px 0;
 }
 
-@media screen and (min-width:768px)
-{
-    .wrap
-    {
+@media screen and (min-width: 768px) {
+    .wrap {
         margin: auto;
         display: flex;
     }
 
-    .item
-    {
+    .item {
         width: 500px;
         margin: 10px 20px;
     }

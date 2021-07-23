@@ -1,16 +1,14 @@
-*{
+* {
     font-size: 0px;
 }
 
-.wrap
-{
+.wrap {
     width: 960px;
     margin: auto;
     background-color: hotpink;
 }
 
-.col
-{
+.col {
     background-color: white;
     word-break: break-all;
     border: 5px solid grey;

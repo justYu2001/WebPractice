@@ -1,5 +1,4 @@
-.header
-{
+.header {
     width: 100%;
     display: flex;
     background-color: transparent;
@@ -9,48 +8,42 @@
     animation: headerload 2s ease-in-out forwards;
 }
 
-.header a
-{
+.header a {
     display: inline-block;
 }
 
-.header a img
-{
+.header a img {
     padding: 10px 10px;
     vertical-align: bottom;
 }
 
-@keyframes headerload
-{
-    0%{
+@keyframes headerload {
+    0% {
         background-color: transparent;
         top: -70px;
     }
-    100%{
+    100% {
         background-color: black;
         top: 0px;
     }
 }
 
-.header nav
-{
+.header nav {
     width: inherit;
     text-align: right;
     font-size: 0px;
 }
 
-@keyframes aload
-{
-    0%{
+@keyframes aload {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
 
-.header nav a
-{
+.header nav a {
     color: white;
     text-decoration: none;
     padding: 0 15px;
@@ -58,39 +51,34 @@
     font-size: 18px;
     opacity: 0;
     animation: aload 1s 2s ease-in forwards;
-    transition: font-weight .3s 0s ease,background-color .7s 0s ease,color .7s 0s ease;
+    transition: font-weight 0.3s 0s ease, background-color 0.7s 0s ease,
+        color 0.7s 0s ease;
 }
 
-.header nav a:hover
-{
+.header nav a:hover {
     background-color: white;
     color: black;
     font-weight: bold;
 }
 
-.banner
-{
+.banner {
     margin-top: 70px;
 }
 
-.banner img
-{
+.banner img {
     width: 100%;
 }
 
-.path
-{
+.path {
     display: flex;
     justify-content: center;
 }
 
-.path li
-{
+.path li {
     position: relative;
 }
 
-.path li a
-{
+.path li a {
     text-decoration: none;
     color: #aaaaaa;
     display: inline-block;
@@ -99,68 +87,57 @@
     transition: all 0.5s 0s ease;
 }
 
-.path li+li::before
-{
+.path li + li::before {
     content: '/';
     color: #aaa;
     position: absolute;
     left: -2px;
-    top:11.5px;
+    top: 11.5px;
 }
 
-.path li a:hover
-{
+.path li a:hover {
     border-bottom: 3px solid #555555;
     color: #555555;
 }
-.about
-{
+.about {
     margin: 10px;
 }
 
-.wrap
-{
+.wrap {
     width: 960px;
     margin: auto;
 }
 
-.about .wrap
-{
+.about .wrap {
     display: flex;
 }
 
-.about .wrap .item
-{
+.about .wrap .item {
     width: 300px;
     margin: 0px 10px;
     text-align: center;
     transition: all 0.5s 0s ease;
 }
 
-.about .wrap .item img
-{
+.about .wrap .item img {
     border-radius: 50%;
 }
 
-.about .wrap .item .title
-{
+.about .wrap .item .title {
     font-size: 36px;
     font-weight: bold;
     margin: 0 5px;
 }
 
-.about .wrap .item .content
-{
+.about .wrap .item .content {
     padding: 0 5px;
 }
 
-.about .wrap .item:hover
-{
+.about .wrap .item:hover {
     color: #888888;
 }
 
-.about > h2
-{
+.about > h2 {
     font-size: 48px;
     padding: 10px;
     width: 100%;
@@ -168,8 +145,7 @@
     font-weight: bold;
 }
 
-.about > p
-{
+.about > p {
     line-height: 1.5;
     margin: auto;
     width: 770px;
@@ -177,29 +153,24 @@
     text-align: center;
 }
 
-.product
-{
+.product {
     background-color: #888888;
 }
 
-.product .wrap
-{
+.product .wrap {
     display: flex;
 }
 
-.product .item
-{
+.product .item {
     width: 50%;
 }
 
-.product .item img
-{
+.product .item img {
     width: 100%;
     vertical-align: bottom;
 }
 
-.product .wrap .contnet
-{
+.product .wrap .contnet {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -208,14 +179,12 @@
     font-size: 24px;
 }
 
-.product .wrap .contnet .title
-{
+.product .wrap .contnet .title {
     font-size: 36px;
     font-weight: bold;
 }
 
-.footer
-{
+.footer {
     background-color: black;
     color: #888888;
     padding: 20px;
@@ -223,26 +192,22 @@
     font-weight: bold;
 }
 
-.service .wrap
-{
+.service .wrap {
     display: flex;
     width: 960px;
     margin: auto;
 }
 
-.service .wrap .item
-{
+.service .wrap .item {
     width: 220px;
     margin: 0 10px;
 }
 
-.service .wrap .item img
-{
+.service .wrap .item img {
     width: 100%;
 }
 
-.service .wrap .title
-{
+.service .wrap .title {
     font-size: 36px;
     font-weight: bold;
     margin: 0 5px;
@@ -250,15 +215,13 @@
     text-align: center;
 }
 
-.service .wrap .content
-{
+.service .wrap .content {
     margin: 0 5px;
     width: 100%;
     text-align: center;
 }
 
-.service h2 
-{
+.service h2 {
     font-size: 48px;
     padding: 10px;
     width: 100%;
@@ -266,13 +229,11 @@
     font-weight: bold;
 }
 
-.service p
-{
+.service p {
     text-align: center;
     margin: 10px 0px 20px;
 }
 
-.service
-{
+.service {
     margin: 20px;
 }

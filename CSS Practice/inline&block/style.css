@@ -1,24 +1,24 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-.menu{
-    background-color: #B2F7EF;
+.menu {
+    background-color: #b2f7ef;
     text-align: center;
     font-size: 0px;
 }
 
-.menu a{
+.menu a {
     display: inline-block;
     padding: 10px 10px;
-    background-color: #B2F7EF;
+    background-color: #b2f7ef;
     text-decoration: none;
-    color: #003F91;
+    color: #003f91;
     font-size: 24px;
 }
 
-.menu a:hover{
-    background-color: #003F91;
+.menu a:hover {
+    background-color: #003f91;
     color: #ffffff;
 }

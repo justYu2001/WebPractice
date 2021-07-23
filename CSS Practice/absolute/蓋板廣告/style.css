@@ -1,22 +1,19 @@
-.wrap
-{
+.wrap {
     width: 1200px;
     margin: auto;
 }
 
-.wrap p
-{
+.wrap p {
     line-height: 1.2;
 }
 
-.ad
-{
+.ad {
     position: relative;
     width: 1200px;
     position: fixed;
     border: 10px black solid;
     left: 50%;
-    top:50%;
+    top: 50%;
     margin-top: -240px;
     margin-left: -610px;
     padding: 10px 0px;
@@ -24,18 +21,16 @@
     /* display: none; */
 }
 
-.ad img
-{
+.ad img {
     display: block;
     margin: auto;
 }
 
-.close
-{
+.close {
     position: absolute;
     right: 0px;
     top: 0px;
     background-color: #aaaaaa;
-    color:white;
+    color: white;
     padding: 2px 5px;
 }

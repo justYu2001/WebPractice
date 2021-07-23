@@ -1,11 +1,10 @@
-body
-{
+body {
     display: flex;
     justify-content: center;
 }
 
-.block
-{
+.block {
     width: 100px;
-    height: 100px;background-color: black;
+    height: 100px;
+    background-color: black;
 }

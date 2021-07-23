@@ -1,5 +1,4 @@
-.wrap
-{
+.wrap {
     display: flex;
     border: 3px black solid;
     box-sizing: border-box;
@@ -11,15 +10,13 @@
     margin: auto;
 }
 
-.item
-{
+.item {
     margin: 20px 0;
     width: 300px;
     height: 200px;
     background-color: lawngreen;
 }
 
-.item2
-{
+.item2 {
     align-self: flex-start;
 }

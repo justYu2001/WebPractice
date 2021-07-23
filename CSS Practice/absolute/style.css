@@ -1,12 +1,10 @@
-.wrap
-{
+.wrap {
     display: flex;
     width: 960px;
     margin: auto;
 }
 
-.item
-{
+.item {
     width: 300px;
     margin: 10px;
     border: 1px #aaaaaa solid;
@@ -14,19 +12,16 @@
     position: relative;
 }
 
-.item img
-{
+.item img {
     width: 100%;
 }
 
-.title
-{
+.title {
     font-size: 24px;
     font-weight: bold;
 }
 
-.tab
-{
+.tab {
     position: absolute;
     left: -4px;
     top: -4px;

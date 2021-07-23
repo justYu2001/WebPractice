@@ -1,5 +1,4 @@
-.box
-{
+.box {
     width: 960px;
     height: 600px;
     border: 3px solid black;
@@ -11,15 +10,13 @@
     margin: auto;
 }
 
-.item
-{
+.item {
     background-color: cornflowerblue;
     font-size: 24px;
     width: 300px;
     margin: 10px 0;
 }
 
-.item::first-letter
-{
+.item::first-letter {
     font-size: 40px;
 }

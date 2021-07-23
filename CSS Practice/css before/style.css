@@ -1,10 +1,8 @@
-.test-list
-{
+.test-list {
     counter-reset: test 0;
 }
 
-.list-item::before
-{
+.list-item::before {
     content: counter(test) '.';
     counter-increment: test 1;
 }

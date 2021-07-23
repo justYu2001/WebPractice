@@ -1,40 +1,40 @@
 ul {
-  width: 960px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 0;
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
 }
 li {
-  width: 200px;
-  height: 200px;
-  margin: -20px 60px;
-  text-align: center;
-  line-height: 200px;
-  position: relative;
-  font-size: 36px;
+    width: 200px;
+    height: 200px;
+    margin: -20px 60px;
+    text-align: center;
+    line-height: 200px;
+    position: relative;
+    font-size: 36px;
 }
 
 li::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #aaaaaa;
-  top: 0;
-  left: 0;
-  transform: rotate(45deg);
-  z-index: -1;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #aaaaaa;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
 li:hover::before {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 li:nth-child(n + 4) {
-  left: 160px;
+    left: 160px;
 }
 
 li:nth-child(n + 7) {
-  left: 0;
+    left: 0;
 }

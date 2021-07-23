@@ -1,10 +1,8 @@
-ul
-{
+ul {
     font-size: 0px;
 }
 
-li
-{
+li {
     display: inline-block;
     background-color: black;
     color: white;
@@ -16,16 +14,14 @@ li
     line-height: 200px;
 }
 
-.item19
-{
+.item19 {
     background-color: violet;
     position: relative;
     left: 220px;
     /* z-index: 0; */
 }
 
-.item20
-{
+.item20 {
     position: relative;
     right: 220px;
 }

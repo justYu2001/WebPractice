@@ -1,38 +1,33 @@
-.title
-{
+.title {
     font-size: 36px;
     font-weight: bolder;
     margin: 20px 0px 20px 0px;
 }
 
-.content
-{
+.content {
     border: 5px solid #0077ff;
     padding: 20px;
     width: fit-content;
 }
 
-.content.center
-{
+.content.center {
     width: 500px;
     text-align: center;
 }
 
-.keyword{
-    color:#1abc9c;
+.keyword {
+    color: #1abc9c;
 }
 
-.up
-{
+.up {
     position: relative;
     top: -10px;
 }
 
-.cube
-{
+.cube {
     height: 100px;
     width: 100px;
-    background-color:#48dbfb;
+    background-color: #48dbfb;
     position: relative;
     left: 550px;
     top: -73px;

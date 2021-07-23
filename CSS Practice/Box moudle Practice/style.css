@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.box{
+.box {
     width: 1080px;
     margin: auto;
     background-color: cornflowerblue;
 }
 
-.column{
+.column {
     width: 320px;
     padding: 10px;
     border: rgb(10, 194, 102) solid 5px;
@@ -18,6 +18,6 @@
     word-break: break-all;
 }
 
-.clear-fix{
+.clear-fix {
     clear: both;
 }

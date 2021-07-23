@@ -1,153 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 body {
-  background-color: #edece1;
+    background-color: #edece1;
 }
 
 h1,
 h2,
 p {
-  font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 h1 {
-  font-size: 3.375rem;
-  line-height: 1.5;
-  font-weight: 700;
+    font-size: 3.375rem;
+    line-height: 1.5;
+    font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25rem;
-  line-height: 1.2;
-  font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.2;
-  font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 100;
 }
 
 .wrap {
-  width: 960px;
-  margin: auto;
+    width: 960px;
+    margin: auto;
 }
 
 .wrap > h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .clear-fix::after {
-  content: '';
-  display: table;
-  clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .timeline {
-  padding: 100px 0 200px;
+    padding: 100px 0 200px;
 }
 
 .timeline li {
-  width: 50%;
-  padding: 20px 0;
-  box-sizing: border-box;
-  position: relative;
+    width: 50%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .timeline li:nth-child(odd) {
-  float: left;
-  padding-right: 100px;
+    float: left;
+    padding-right: 100px;
 }
 
 .timeline li:nth-child(odd)::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  background-color: #cccccc;
-  top: 0;
-  right: 0;
-  z-index: -1;
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #cccccc;
+    top: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .timeline li:nth-child(even) {
-  float: right;
-  padding-left: 100px;
-  transform: translateY(50%);
+    float: right;
+    padding-left: 100px;
+    transform: translateY(50%);
 }
 
 .timeline li:last-child::before {
-  height: 50%;
+    height: 50%;
 }
 
 .timeline li:nth-child(odd)::after,
 .timeline li:nth-child(even)::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #aaaaaa;
-  border-radius: 50%;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .timeline li:nth-child(odd)::after {
-  right: -8.5px;
+    right: -8.5px;
 }
 
 .timeline li:nth-child(even)::after {
-  left: -11.5px;
+    left: -11.5px;
 }
 
 .timeline a {
-  display: block;
-  text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid #aaaaaa;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 3px 3px 5px #ccc;
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 5px #ccc;
 }
 
 .timeline a:hover {
-  background-color: #6fa5fc;
+    background-color: #6fa5fc;
 }
 
 .timeline a:hover h2,
 .timeline a:hover p {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .timeline h2 {
-  color: #333333;
+    color: #333333;
 }
 
 .timeline li:nth-child(odd) h2::after,
 .timeline li:nth-child(even) h2::after {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  background-color: #cccccc;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #cccccc;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .timeline li:nth-child(odd) h2::after {
-  right: 0;
+    right: 0;
 }
 
 .timeline li:nth-child(even) h2::after {
-  left: 0;
+    left: 0;
 }
 
 .timeline p {
-  color: #666666;
+    color: #666666;
 }

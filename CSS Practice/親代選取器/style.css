@@ -1,20 +1,16 @@
-h1+p
-{
+h1 + p {
     color: red;
 }
 
-p+p
-{
+p + p {
     border-top: 5px solid black;
 }
 
-nav a+a
-{
+nav a + a {
     border-left: 3px solid black;
 }
 
-nav a
-{
+nav a {
     display: inline-block;
     padding: 0 5px;
     text-decoration: none;

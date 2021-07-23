@@ -1,88 +1,73 @@
-.banner img
-{
+.banner img {
     width: 100%;
     vertical-align: bottom;
 }
 
-.item
-{
+.item {
     margin: 10px 20px;
 }
-.item .pic img
-{
+.item .pic img {
     width: 100%;
 }
 
-.title
-{
+.title {
     text-align: center;
     background-color: #cccccc;
     padding: 10px 20px;
     margin: 0px 0 20px;
 }
 
-.title h2
-{
+.title h2 {
     font-size: 46px;
     font-weight: bold;
     margin: 20px 0;
 }
 
-.item .content
-{
+.item .content {
     text-align: center;
     padding: 10px 0;
 }
-.item .content h3
-{
+.item .content h3 {
     font-size: 36px;
 }
 
-.item .content h2
-{
+.item .content h2 {
     font-size: 46px;
     font-weight: bold;
     margin: 20px 0;
 }
 
-.footer
-{
+.footer {
     background-color: black;
     color: #aaaaaa;
-    height:40px;
+    height: 40px;
     line-height: 40px;
     text-align: center;
 }
 
-@media screen and (min-width:768px)
-{
-    .item-group
-    {
+@media screen and (min-width: 768px) {
+    .item-group {
         display: flex;
     }
 
-    .service .item-group
-    {
+    .service .item-group {
         background-color: #ffffaa;
         margin: 60px 0;
         padding: 0 20px;
     }
 
-    .service .item
-    {
+    .service .item {
         display: flex;
     }
 
-    .service .item div
-    {
-       width: 50%;
+    .service .item div {
+        width: 50%;
     }
 
-    .service .item .content
-    {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       line-height: 1.2;
+    .service .item .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
     }
 }

@@ -1,75 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
 body {
-  height: 100vh;
-  background: url('/CSS%20Practice/登入表單/bg.jfif') no-repeat center center /
-    cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    background: url('/CSS%20Practice/登入表單/bg.jfif') no-repeat center center /
+        cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login {
-  width: 600px;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 10px solid #ffffff;
-  border-radius: 10px;
-  backdrop-filter: blur(3px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form {
-  width: 400px;
-  color: #ffffff;
-  font-family: 'Noto Sans TC', sans-serif;
+    width: 400px;
+    color: #ffffff;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 form h2 {
-  font-size: 36px;
-  font-weight: 500;
-  margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .group label {
-  line-height: 2;
+    line-height: 2;
 }
 
 .group input {
-  line-height: 2;
-  border: 1px solid #aaaaaa;
-  font-size: 24px;
-  border-radius: 5px;
+    line-height: 2;
+    border: 1px solid #aaaaaa;
+    font-size: 24px;
+    border-radius: 5px;
 }
 
 .group input:focus {
-  outline: none;
+    outline: none;
 }
 
 .btn_group {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn {
-  width: 190px;
-  font-size: 20px;
-  border-radius: 5px;
-  border: none;
-  color: #ffffff;
-  padding: 10px 0;
-  background-color: #6ab4fe;
+    width: 190px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 0;
+    background-color: #6ab4fe;
 }
 
 .btn:focus {
-  outline: none;
+    outline: none;
 }
