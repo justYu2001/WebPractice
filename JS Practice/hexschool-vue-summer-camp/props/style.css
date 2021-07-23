@@ -1,0 +1,44 @@
+.block {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+#app {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.menu ul > li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    padding: 8px;
+    background-color: #eee;
+}
+h2.has-child {
+    cursor: pointer;
+}
+
+h2.has-child::before {
+    content: '+';
+    width: 17px;
+    display: inline-block;
+}
+
+h2.has-child.is-open::before {
+    content: '-';
+    width: 17px;
+    display: inline-block;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="app">
+            <h3>{{ msg }}</h3>
+            <my-component :parent-msg="msg" :props-num="123"></my-component>
+            <ul v-for="person in people" :key="person.id">
+                <li>名子:{{ person.name }}</li>
+                <li>年齡:{{ person.age }}</li>
+                <li>國家:{{ person.country }}</li>
+            </ul>
+            <person-info
+                v-for="person in people"
+                :key="person.id"
+                v-bind="person"
+                @update="updateInfo"
+            ></person-info>
+            <block :class="className" @click="greeting"></block>
+            <custom-layout :class="className"></custom-layout>
+            <div class="menu">
+                <menu-component
+                    :title="menuData.name"
+                    :children="menuData.childNodes"
+                ></menu-component>
+            </div>
+            <child-component text="child1" ref="child1"></child-component>
+            <child-component text="child2" ref="child2"></child-component>
+            <h1>{{ title }}</h1>
+            <custom-input v-model:title="title"></custom-input>
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
