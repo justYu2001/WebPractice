@@ -99,18 +99,22 @@ export default {
         displayResult() {
             this.$emit('update:expression', [...this.expression, '=']);
             const result = this.rpnEval();
+            let displayResult = result.toString();
+            if (displayResult.length > 7) {
+                displayResult = result.toPrecision(4);
+            }
             if (!result.isFinite()) {
                 this.$emit('update:result', '∞');
             } else if (result.isNaN()) {
                 this.$emit('update:result', '錯誤');
             } else {
-                this.$emit('update:result', result.toString());
+                this.$emit('update:result', displayResult);
             }
             if (this.history.value.length === 10) {
                 this.history.value.shift();
             }
             this.history.value.push(
-                `${this.displayExpression} = ${result.toString()}`
+                `${this.displayExpression} = ${displayResult}`
             );
             window.localStorage.setItem('history', this.history.value);
         },
