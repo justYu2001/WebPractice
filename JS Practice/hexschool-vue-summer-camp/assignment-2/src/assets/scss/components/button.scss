@@ -1,0 +1,25 @@
+%btn {
+    border: none;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+    }
+}
+
+%btn-sm {
+    @extend %btn;
+    width: 38px;
+    margin: 10px;
+}
+
+%btn-lg {
+    @extend %btn;
+    width: 96px;
+    margin: 0 10px;
+    background-color: #fff;
+    &:hover {
+        background-color: #e8e8e8;
+    }
+}
