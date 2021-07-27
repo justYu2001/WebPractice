@@ -5,6 +5,11 @@
 <script>
 import BigNumber from 'bignumber.js'; //處理浮點數運算精度問題
 
+BigNumber.config({
+    EXPONENTIAL_AT: [-7, 7],
+    DECIMAL_PLACES: 7,
+});
+
 export default {
     name: 'EqualButton',
     props: {
@@ -96,13 +101,13 @@ export default {
             } else if (result.isNaN()) {
                 this.$emit('update:result', '錯誤');
             } else {
-                this.$emit('update:result', result.toFormat());
+                this.$emit('update:result', result.toString());
             }
             if (this.history.value.length === 10) {
                 this.history.value.shift();
             }
             this.history.value.push(
-                `${this.displayExpression} = ${result.toFormat()}`
+                `${this.displayExpression} = ${result.toString()}`
             );
             window.localStorage.setItem('history', this.history.value);
         },
