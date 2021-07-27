@@ -8,6 +8,9 @@ import BigNumber from 'bignumber.js'; //處理浮點數運算精度問題
 BigNumber.config({
     EXPONENTIAL_AT: [-7, 7],
     DECIMAL_PLACES: 7,
+    FORMAT: {
+        decimalSeparator: '',
+    },
 });
 
 export default {
