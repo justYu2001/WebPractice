@@ -1,0 +1,21 @@
+.modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #4d4d4d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body {
+    background-color: #fff;
+    width: 80%;
+    height: 300px;
+}
+
+.test {
+    margin: 10px;
+}
