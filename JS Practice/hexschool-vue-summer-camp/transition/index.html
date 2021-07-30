@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <button @click="isShow = !isShow">fade</button>
+        <transition name="fade">
+            <div class="block" v-show="isShow">Hello Vue!</div>
+        </transition>
+        <div>
+            <button @click="slideShow = !slideShow">slide</button>
+            <transition name="slide">
+                <div class="block" v-show="slideShow">Hello Vue!</div>
+            </transition>
+        </div>
+        <div>
+            <button @click="listShow = !listShow">Toggle</button>
+            <ul>
+                <transition name="list" mode="out-in">
+                    <li class="block" v-if="listShow">item 1</li>
+                    <li class="block" v-else>item 2</li>
+                </transition>
+            </ul>
+        </div>
+        <div>
+            <label v-for="option in options" :key="option">
+                <input type="radio" :value="option" v-model="block">
+                {{ option }}
+            </label>
+            <transition-group name="list-group" tag="ul">
+                <li class="block" v-if="block === 'A'" key="block-a">item A</li>
+                <li class="block" v-if="block === 'B'" key="block-b">item B</li>
+                <li class="block" v-if="block === 'C'" key="block-c">item C</li>
+            </transition-group>
+        </div>
+        <div>
+            <button @click="createRandomNumber">Create Random Number</button>
+            <button @click="numberLists1 = []">Remove all</button>
+            <transition-group tag="ul" class="number-list" name="number-list">
+                <li 
+                    class="item" 
+                    v-for="(number, index) in numberLists1" 
+                    :key="number">
+                    {{ number }}
+                </li>
+            </transition-group>
+        </div>
+        <div>
+            <button @click="shuffle">shuffle</button>
+            <button @click="add">add</button>
+            <transition-group class="number-list" tag="ul" name="shuffle">
+                <li 
+                    class="item"
+                    v-for="(number, index) in numberLists2"
+                    :key="number">
+                    {{ number }}
+                </li>
+            </transition-group>
+        </div>
+        <div class="hook">
+            <button @click="getUser">隨機取得user資訊</button>
+            <div class="flexbox-wrapper" :style="{height: height + 'px'}">
+                <div class="flex-body" ref="content">
+                    <div class="user-block" v-if="user.name">
+                        <h2>{{ user.name }} / @{{ user.username }}</h2>
+                        <img src="https://dummyimage.com/200x200/666/fff" alt="dummyimage">
+                        <div class="wraps">
+                          <p>{{ user.company.name }}</p>
+                          <p>{{ user.phone }}</p>
+                          <p>{{ user.email }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <transition 
+                name="loading" 
+                mode="out-in"
+                @before-enter="beforeEnter" 
+                @before-leave="beforeLeave">
+                <div class="loading" v-if="isLoading">
+                    <img src="https://raw.githubusercontent.com/kurotanshi/vue-functional-demo/master/loading.gif" alt="Loading">
+                </div>
+            </transition>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+</html>

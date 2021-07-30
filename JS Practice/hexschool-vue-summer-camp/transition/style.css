@@ -1,0 +1,185 @@
+.fade-enter-to,
+.fade-leave-from {
+    opacity: 1;
+}
+
+.fade-leave-to,
+.fade-enter-from {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s;
+}
+
+.block {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+.slide-enter-to,
+.slide-leave-from {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.slide-enter-from {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+    transition: all 0.9s ease;
+}
+
+.slide-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.list-leave-to,
+.list-group-leave-to {
+    opacity: 0;
+}
+
+.list-leave-from,
+.list-group-leave-from {
+    opacity: 1;
+}
+
+.list-leave-active,
+.list-group-leave-active {
+    transition: all 1s;
+}
+
+.list-enter-from,
+.list-group-enter-from {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.list-enter-to,
+.list-group-enter-to {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.list-enter-active,
+.list-group-active {
+    transition: all 1s;
+}
+
+button {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.number-list {
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    min-height: 55px;
+}
+.number-list > li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f00;
+    color: #fff;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.number-list-enter-active,
+.number-list-leave-active,
+.number-list-move {
+    transition: opacity 0.7s, transform 0.7s;
+}
+
+.number-list-enter-from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.number-list-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.shuffle-move {
+    transition: all 0.8s;
+}
+
+.flexbox-wrapper {
+    position: relative;
+    overflow: hidden;
+    transition: height 1s;
+    min-height: 35px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.flexbox-body {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.user-block {
+    overflow: hidden;
+    background: #eee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 420px;
+}
+.user-block img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 1rem 0 0;
+}
+
+.user-block .wraps {
+    float: left;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.user-block h2 {
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.loading {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loading img {
+    border: none;
+}
+
+.hook {
+    height: 400px;
+}
+
+.loading-enter-from {
+    opacity: 0;
+}
+
+.loading-leave-to {
+    opacity: 0;
+}
+
+.loading-enter-active,
+.loading-leave-active {
+    transition: opacity 1s;
+}
