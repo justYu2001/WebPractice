@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <div id="app">
+        <button @click="noActivated = true">shake</button>
+        <div 
+            ref="block" 
+            class="block" 
+            :class="{shake: noActivated}"
+            @animationend="reactivated"></div>
+        <div>
+            <button 
+                v-for="className in animateClasses"
+                :key="className"
+                @click="activateAnimate(className)">
+                {{ className }}
+            </button>
+            <div class="block" :class="animatedClassName"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+</html>
