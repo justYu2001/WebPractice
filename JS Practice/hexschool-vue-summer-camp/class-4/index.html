@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{ text }}
+        <p>reactive:{{person.name}}</p>
+        <p>ref:{{ person2.name }}</p>
+        <input type="text" v-model="text">
+        <button @click="getText">click</button>
+        <div>
+            {{ num }}
+            <input type="number" v-model.number="num">
+            {{ doubleNum }}
+        </div>
+        <div>
+            <input type="text" v-model="name"> <button @click="addItem">增加文字</button>
+            <ul>
+                <li v-for="(item, index) in items" :key="item.id">
+                    {{ item.name }}
+                    <button @click="removeItem(item.id)">刪除</button>
+                    <button @click="editItem(item)">編輯</button>
+                </li>
+            </ul>
+            <input type="text" v-model="temp.name"><button @click="saveItem(temp.id)">編輯完成</button>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
