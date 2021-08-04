@@ -1,4 +1,10 @@
-import { createApp, ref, reactive, computed, onMounted } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.0-beta.7/vue.esm-browser.min.js';
+import {
+    createApp,
+    ref,
+    reactive,
+    computed,
+    onMounted,
+} from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.0-beta.7/vue.esm-browser.min.js';
 
 const app = createApp({
     setup() {
@@ -8,28 +14,28 @@ const app = createApp({
         });
 
         const person2 = ref({
-            name:'yu',
+            name: 'yu',
         });
 
-        const getText = ()=>console.log(text.value);
+        const getText = () => console.log(text.value);
 
         onMounted(() => {
             getText();
         });
 
         onMounted(() => {
-           person2.value.name = 'jack'; 
+            person2.value.name = 'jack';
         });
 
         const num = ref(1);
-        const doubleNum = computed(()=> num.value * 2);
+        const doubleNum = computed(() => num.value * 2);
 
         //todo
         const name = ref('');
         const items = ref([]);
         const temp = ref({});
 
-        const addItem = () =>{
+        const addItem = () => {
             items.value.push({
                 name: name.value,
                 id: `${name.value}-${items.value.length}`,
@@ -37,11 +43,11 @@ const app = createApp({
             name.value = '';
         };
 
-        const removeItem = (id) =>{
+        const removeItem = (id) => {
             items.value = items.value.filter((item) => id !== item.id);
         };
 
-        const editItem = (item) =>{
+        const editItem = (item) => {
             temp.value = { ...item };
         };
 
@@ -50,11 +56,11 @@ const app = createApp({
             items.value[index] = {
                 name: temp.value.name,
                 id: `${temp.value.name}-${index}`,
-            }
+            };
             temp.value = {};
         };
 
-        return{
+        return {
             text,
             person,
             getText,
@@ -68,8 +74,8 @@ const app = createApp({
             removeItem,
             editItem,
             saveItem,
-        }
-    }
+        };
+    },
 });
 
 app.mount('#app');
