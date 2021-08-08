@@ -1,0 +1,8 @@
+%btn {
+    border: 0;
+    font-size: $btn-font-size;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+}
