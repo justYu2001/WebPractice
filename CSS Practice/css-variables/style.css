@@ -1,0 +1,21 @@
+:root{
+    --green: #008000;
+    --blue: #2222ff;
+    --bgc: #ff2222;
+}
+
+h1{
+    --blue: #4444ff;
+    color: var(--green);
+    background-color: var(--blue);
+}
+
+p{
+    color: var(--light-green, #44ff44);
+}
+
+.block{
+    background-color: var(--bgc);
+    width: 100px;
+    height: 100px;
+}
