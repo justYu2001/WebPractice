@@ -1,0 +1,16 @@
+@function columns-number-to-percentage($cols: 1, $total: 1) {
+    @return ($cols / $total) * 100%;
+}
+
+
+.warp{
+    max-width: 1400px;
+    display: flex;
+}
+
+.block{
+    width: columns-number-to-percentage(1, 3);
+    margin: 10px;
+    background-color: #000;
+    height: 100px;
+}

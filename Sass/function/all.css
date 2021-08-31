@@ -1,0 +1,14 @@
+.warp {
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block {
+  width: 33.33333%;
+  margin: 10px;
+  background-color: #000;
+  height: 100px;
+}
+/*# sourceMappingURL=all.css.map */
