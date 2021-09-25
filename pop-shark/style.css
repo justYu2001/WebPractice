@@ -1,0 +1,31 @@
+h1, 
+div, 
+img {
+    user-select: none;
+}
+
+.container {
+    margin: auto;
+    width: fit-content;
+}
+
+.title {
+    font-size: 54px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.counter {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.open-mouth,
+.close-mouth {
+    display: none;
+}
+
+.show {
+    display: initial;
+}
